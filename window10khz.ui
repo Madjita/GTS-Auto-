@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window10Khz</class>
+ <widget class="QWidget" name="Window10Khz">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Устройство не подключенно</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Частоты перестройки по 10 кГц</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator{
+
+	width: 13px;
+	height: 13px;
+
+}
+
+QRadioButton::indicator::unchecked{
+
+ image: url(://images/circle_gray.png);
+
+}
+
+QRadioButton::indicator::checked{
+
+ image: url(://images/circle_zel.png);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>950</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator{
+
+	width: 13px;
+	height: 13px;
+
+}
+
+QRadioButton::indicator::unchecked{
+
+ image: url(://images/circle_gray.png);
+
+}
+
+QRadioButton::indicator::checked{
+
+ image: url(://images/circle_zel.png);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>1250</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator{
+
+	width: 13px;
+	height: 13px;
+
+}
+
+QRadioButton::indicator::unchecked{
+
+ image: url(://images/circle_gray.png);
+
+}
+
+QRadioButton::indicator::checked{
+
+ image: url(://images/circle_zel.png);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>1500</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_4">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator{
+
+	width: 13px;
+	height: 13px;
+
+}
+
+QRadioButton::indicator::unchecked{
+
+ image: url(://images/circle_gray.png);
+
+}
+
+QRadioButton::indicator::checked{
+
+ image: url(://images/circle_zel.png);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>1750</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_5">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator{
+
+	width: 13px;
+	height: 13px;
+
+}
+
+QRadioButton::indicator::unchecked{
+
+ image: url(://images/circle_gray.png);
+
+}
+
+QRadioButton::indicator::checked{
+
+ image: url(://images/circle_zel.png);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>2000</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_6">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator{
+
+	width: 13px;
+	height: 13px;
+
+}
+
+QRadioButton::indicator::unchecked{
+
+ image: url(://images/circle_gray.png);
+
+}
+
+QRadioButton::indicator::checked{
+
+ image: url(://images/circle_zel.png);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>2150</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

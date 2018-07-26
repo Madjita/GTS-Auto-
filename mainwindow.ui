@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GTS Auto</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>7</number>
+          </property>
+          <property name="documentMode">
+           <bool>false</bool>
+          </property>
+          <property name="tabBarAutoHide">
+           <bool>false</bool>
+          </property>
+          <widget class="WindowAchH" name="windowAchHui">
+           <attribute name="title">
+            <string>Диапазон выходных частот «ВЫХ ПРД» с шагом, МГц</string>
+           </attribute>
+          </widget>
+          <widget class="Window10Khz" name="window10Khz">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="title">
+            <string>«ВЫХ ПРД» Шаг перестройки, 10 кГц</string>
+           </attribute>
+          </widget>
+          <widget class="WindowAttMax" name="windowAttMax">
+           <attribute name="title">
+            <string>Максимальная мощность выходного сигнала «ВЫХ ПРД», дБм</string>
+           </attribute>
+          </widget>
+          <widget class="WindowAttMax" name="windowAttChenge">
+           <attribute name="title">
+            <string>Диапазон регулировки мощности выходного сигнала с шагом 0,5 дБ на разъеме «ВЫХ ПРД», дБм</string>
+           </attribute>
+          </widget>
+          <widget class="WindowCollateral" name="windowCollateral">
+           <attribute name="title">
+            <string>Относительный уровень мощности побочных составляющих в спектре выходного сигнала «ВЫХ ПРД», дБ</string>
+           </attribute>
+          </widget>
+          <widget class="WindowSpectr" name="windowSpectr">
+           <attribute name="title">
+            <string>Спектральная плотность мощности фазовых шумов выходного сигнала «ВЫХ ПРД» в диапазоне от 950 до 2150 МГц при отстройке от несущей, дБ/Гц</string>
+           </attribute>
+          </widget>
+          <widget class="WindowNes" name="windowNes">
+           <attribute name="title">
+            <string>Подавление несущей и Подавление одной боковой полосы, дБ</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Время переключения частоты «ВЫХ ПРД» в режиме ППРЧ, мкс</string>
+           </attribute>
+          </widget>
+          <widget class="WindowAchH" name="windowAchHui_gprm">
+           <attribute name="title">
+            <string>Диапазон входных частот «ГПРМ», МГц</string>
+           </attribute>
+          </widget>
+          <widget class="Window10Khz" name="window10Khz_gprm">
+           <attribute name="title">
+            <string>«ГПРМ» Шаг перестройки, 10 кГц </string>
+           </attribute>
+          </widget>
+          <widget class="WindowAttMax" name="windowAttMax_gprm">
+           <attribute name="title">
+            <string>Мощность выходного сигнала «ГПРМ», дБм</string>
+           </attribute>
+          </widget>
+          <widget class="WindowCollateral" name="windowCollateral_gprm">
+           <attribute name="title">
+            <string>Относительный уровень мощности побочных составляющих в спектре выходного сигнала «ГПРМ», дБ</string>
+           </attribute>
+          </widget>
+          <widget class="WindowSpectr" name="windowSpectr_gprm">
+           <attribute name="title">
+            <string>«ГПРМ» Спектральная плотность мощности фазовых шумов выходного сигнала «ВЫХ ПРД» в диапазоне от 950 до 2150 МГц при отстройке от несущей, дБ/Гц</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2"/>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+        background-color: gray;
+        border-style: outset;
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: beige;
+	    font: bold 14px;
+        min-width: 10em;
+        padding: 6px;
+}
+
+QPushButton:pressed
+{
+        background-color: rgb(169,169,169);
+        border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Старт</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_file"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Параметры</string>
+    </property>
+    <addaction name="action_seitings"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>150</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="WindowDevice" name="windowDevice">
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </widget>
+  </widget>
+  <action name="action_file">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_seitings">
+   <property name="text">
+    <string>Настройка</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WindowAchH</class>
+   <extends>QWidget</extends>
+   <header>windowachh.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Window10Khz</class>
+   <extends>QWidget</extends>
+   <header>window10khz.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WindowAttMax</class>
+   <extends>QWidget</extends>
+   <header>windowattmax.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WindowCollateral</class>
+   <extends>QWidget</extends>
+   <header>windowcollateral.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WindowSpectr</class>
+   <extends>QWidget</extends>
+   <header>windowspectr.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WindowNes</class>
+   <extends>QWidget</extends>
+   <header>windownes.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WindowDevice</class>
+   <extends>QWidget</extends>
+   <header>windowdevice.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
